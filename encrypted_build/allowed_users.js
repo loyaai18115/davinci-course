@@ -10,11 +10,12 @@
  * Чтобы убрать — удалите ID из массива.
  */
 const ALLOWED_USERS = [
-    656835244 // Alex Khs
+    656835244, // Alex Khs
+    769615213  // Новый ученик
 ];
 
 /**
  * Ключ шифрования — генерируется скриптом encrypt.py
  * НЕ МЕНЯЙТЕ вручную, если не перешифровали контент!
  */
-const ENCRYPTION_KEY = '7155414a48891eec7271b0454246cb7b4e3c080ee33161e5d49a8b8cf05cfd2c';
+const ENCRYPTION_KEY = '5a90802e95e1d68407cb79b1e73322b6fd65aabbc2e16ab19a206d1f2a27960d';
