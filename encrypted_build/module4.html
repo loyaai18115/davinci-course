@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Модуль 4. Создание клипа — Фабрика Творцов</title>
+    <meta name="description"
+        content="Создание видеоклипа: запуск истории, разгон эмоций, кульминация, саунд-дизайн и практика.">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="allowed_users.js"></script>
+    <script src="auth.js" defer></script>
+</head>
+
+<body>
+
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">
+                <span class="nav-logo-icon">🎬</span>
+                Фабрика Творцов
+            </a>
+            <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')"
+                aria-label="Меню">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="module1.html">Модуль 1</a></li>
+                <li><a href="module2.html">Модуль 2</a></li>
+                <li><a href="module3.html">Модуль 3</a></li>
+                <li><a href="module4.html" class="active">Модуль 4</a></li>
+                <li><a href="module5.html">Модуль 5</a></li>
+                <li><a href="module6.html">Модуль 6</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="container">
+
+            <div class="breadcrumb">
+                <a href="index.html">Главная</a>
+                <span class="sep">›</span>
+                <span class="current">Модуль 4</span>
+            </div>
+
+            <section class="module-hero">
+                <div class="module-hero-content">
+                    <div class="module-number" style="background: rgba(0,206,201,0.12); color: var(--module-4);">🎵
+                        Модуль 4</div>
+                    <h1 class="module-hero-title">Создание клипа</h1>
+                    <p class="module-hero-desc"><span class="encrypted-content" data-enc="od2ZsKBEqzOoNo70fFXEMv+/gKFUAUch9cJz0JxTyQgZKl9TJrysdcHAjTVZxYIDq8x5G67k6ndMq4ZouT9YCdPtd3IGRcWSo0rnrDjpmFt+cnK1gwPW26MK8aqIZOYFbnkz/EzGheQlak7jm6HwD6DuuOMPmCrkmEbNKf44OLVkmLgBkV6TwYrpCWXQ30eRLcxRwdDqoyFLvuJFH5ScgO1VCa47cUrQMu6xflbBNp/1f+PmkjOgGAB9HyLV3+xphSzMvzzLLb59MD+XhIM8ow==">🔒</span></p>
+                </div>
+            </section>
+
+            <div class="lessons-list">
+
+                <!-- 1 -->
+                <div class="lesson-card">
+                    <div class="lesson-header">
+                        <div class="lesson-number" style="background: rgba(0,206,201,0.12); color: var(--module-4);">1
+                        </div>
+                        <h3 class="lesson-title">Общий созвон</h3>
+                    </div>
+                    <div class="lesson-body"><div class="encrypted-content" data-enc="GW77YlzkJTBrAG1ZhYgHd2DE36g5CC2TDjsogPMGJvBqf/PvHKbtqGGjSI3F8CWaIZw8MAz4N1WWrACnpBSD/A4Qn82b11yprKv4eewhDObbaJC4zs8Xi9W7rg3eObFP/ckBd1klUB7mv0dkt6wOiUJ/s+fIg6RVU85aLYY3CqA+R003K8YY4vU8Txl33etqyFqnrM/lJPehEHWKXEIbxoaScF0bPESidwCSQueDdRpGD1pEW/95zYGCquXufZBc30dtwxk2zNxTavdr1TAs5K3n0VAJ9zrIEfJ3RhcgeUVklVFOSJSmNCfVJYjtCReQjKRpmzNhZQbtxxBnHvX5i1WhewedHd4MKIBZc2Cl1Gc=">🔒</div></div>
+
+                <!-- 2 -->
+                <div class="lesson-card">
+                    <div class="lesson-header">
+                        <div class="lesson-number" style="background: rgba(0,206,201,0.12); color: var(--module-4);">2
+                        </div>
+                        <h3 class="lesson-title">Глава 1: Запуск истории</h3>
+                    </div>
+                    <div class="lesson-body"><div class="encrypted-content" data-enc="8gXelxv7uochR1W8UJhxtDhRmd5QtFn2dNirOZmqW71OgRixARFNgz5LWpf8W80UsFYnDjl6iYd1bue6X1kAztScaZaGjg6v5jd5BWasB4RT2rSLghbPRGihkZ7hkk16tJOSO2zEsld4Usc7GXk4oehjC0OMPRDaRiuSqzXjSmsWUQOHda+pEFQ+KtrY/AerwAkth1RldsqT9nYjwZnn1v1S3B4OHz1hLYDXfxp3AwmDXh3r8MDiEEGJg7+4pTeAso7FG+rOSbG9mHbMSDs3kQ6ZGWgDxIE+tuJ9s6wnGQNs2f9poamXqbstmJOUtIKY5gFQRe7ulEG7lBiFjpJf881GgPVfhpKB0r6vKea4yTZzlHcV7PWWjUa23Wq1DYlIS6wtTlbEbcK6dX0PGjXM6g==">🔒</div></div>
+
+                <!-- 3 -->
+                <div class="lesson-card">
+                    <div class="lesson-header">
+                        <div class="lesson-number" style="background: rgba(0,206,201,0.12); color: var(--module-4);">3
+                        </div>
+                        <h3 class="lesson-title">Глава 2: Разгон эмоций</h3>
+                    </div>
+                    <div class="lesson-body"><div class="encrypted-content" data-enc="PUHJALm6pu/22dNtPTtsYccDiEfcBdZrnkH8zB8WhlUAJGoqlYHJvm847a3BjypeyqZL8W6UiJ4ZxQv9aOlgsNp7BU0ZyrsQd0+yFK7Hq4FTzlaps0UZAAzW1QxlOjAy0CBkkhkjNACE/cYUOxSLB1ia8NIKb6GVyfgys+IBi5Xv7Yo+ifjpFctERJ1H4WsSZ95hecCbf0JJG0+F++xRgEoch8mnnB6RXm3EX1+s8Nc3K2PBcQXINTuh+qowOznm1e5CAakPXDBPluisrF6uLlJCEz+jcZTZ0uObMyCTd6NjhpxQ8C3/r78CirGd6goQHLbu1JqQGugMHDhG9w7g63RaXjgCdZ/MlQX/Jc3d1da4N2D4Evq71emiU0dJ+BEJjvPY3UUjnE8iX9HPlLxPsg==">🔒</div></div>
+
+                <!-- 4 -->
+                <div class="lesson-card">
+                    <div class="lesson-header">
+                        <div class="lesson-number" style="background: rgba(0,206,201,0.12); color: var(--module-4);">4
+                        </div>
+                        <h3 class="lesson-title">Глава 3: Кульминация и финал</h3>
+                    </div>
+                    <div class="lesson-body"><div class="encrypted-content" data-enc="5HUMc4tIr6/C3Jnl/7GlmDqcLGc8dZzX3eIX+ulX5LzdLxpHVoOnIA4BsnOEA9+YtGtb6oT/1IIOWH63YvOrtydaW/aneYDqqKajzn/PwY7xcsVM8pJ+fDlOu3hleD9ezg289ZT38Udf1q/Mc5/z+vIJZjsP+wYvFK6ythQvVuF6wPv5y6jNSA4KBP5QvItGmprBKjfd6+U8FLRD1Nlg96/dVZdOu+qd8TZeVoWrm9y5DAXP4dNAOnAC+GpM5qpk/TxXe9lWxzF048wYwlPkMlZLkbuidPOPO5EP8gQZGrAk3casYTCzxxxmuTzBn3GT5zA1TacMSl4t5helzSlSHERb14cbbL8lfUsPjXkdd/ozKDi/+j9PZvIm5+GJ7fhB44juShf2Al3cz9cI0k2TlchsT96mJm/Xn2tuQRyqe4M=">🔒</div></div>
+
+                <!-- 5 -->
+                <div class="lesson-card">
+                    <div class="lesson-header">
+                        <div class="lesson-number" style="background: rgba(0,206,201,0.12); color: var(--module-4);">5
+                        </div>
+                        <h3 class="lesson-title">Глава 4: Саунд-Дизайн</h3>
+                    </div>
+                    <div class="lesson-body"><div class="encrypted-content" data-enc="KR3WLS80eoPv9lPPtIdEmg933Fw/qkghZtWFAY8HXqPIec9zSSQuoTTVByMdjGUkYEcS2MSQ/UbSjgmcGwPOaU2UdrWtkDAQkwYTH+yE3D86HyinWmYJfucMP+NO5eYUKiTffRZaundQjDHHkY+EvbPJuL2qWCAd3cDoB4Wb0Sa2yKPwangnTEXcBOG7acsZKfSRCakz0yDzpildeYF8tmxrbvmFshdGViRGwxL9Nrm03knNthJAMgthiVMWQkgKN0mSIe8+veEjq6I6M4TK2RixkTmevWw3JG/JbtNRHFb/zdlKrpS2E6uloFa4t4S2XYs8nbCIsPLHRrubTx8aXQUB/Sg/i22OghiNO0NKnoq1aIYYsaCmS0C6xTxEiJXs">🔒</div></div>
+
+                <!-- 6 -->
+                <div class="lesson-card homework-card">
+                    <div class="lesson-header">
+                        <div class="lesson-number" style="background: rgba(0,206,201,0.12); color: var(--module-4);">📝
+                        </div>
+                        <h3 class="lesson-title">Глава 5: Практика в действии</h3>
+                    </div>
+                    <div class="lesson-body"><div class="encrypted-content" data-enc="CE7A1e9qZUgkc4LbJJH78rccIZhV9POQbGYKkjgtAW9u5xYbWZhMxnW8dPvpTJ0/wWzECnBF2Oe9O9nASNGQwkgX4ilhTQ6LCFe2lj5z/81I+LyP+w/A67DMBqdWf2Kx99TWJdvxN+Fe9HSM/rldpnIVikoteLBRDwMGm9TLotXvoy7yvn0u7mj4EqLKGloJdke/ebK3ARk+NnuBziDrEGuu0SG8ChUyBxMRQiQPVKDCAf/PfBRllmHMnym5bs2Eu7HBu1ZJZc62XdqhPPK2t18nQyQeJY33vQpoXyvfH6TKbkWFq8Azy2/U1EUjLU/ACzhPmLeLQPtLvM7jJ+MelbYkm0vIVd1NbFsdycd4JaFqLgstBf2o3HRU2AfUwA+c">🔒</div></div>
+
+            </div>
+
+            <!-- Page Navigation -->
+            <div class="page-nav">
+                <a href="module3.html" class="page-nav-link prev">
+                    <span class="page-nav-label">← Назад</span>
+                    <span class="page-nav-title">Модуль 3. Монтажное мышление</span>
+                </a>
+                <a href="module5.html" class="page-nav-link next">
+                    <span class="page-nav-label">Далее →</span>
+                    <span class="page-nav-title">Модуль 5. Визитка творца</span>
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            Фабрика Творцов | DaVinci Resolve © 2025 — Материалы курса
+        </div>
+    </footer>
+
+</body>
+
+</html>

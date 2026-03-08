@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Модуль 5. Визитка творца — Фабрика Творцов</title>
+    <meta name="description" content="Создание авторского ролика о себе: видеовизитка, пошаговый план, практика.">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="allowed_users.js"></script>
+    <script src="auth.js" defer></script>
+</head>
+
+<body>
+
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">
+                <span class="nav-logo-icon">🎬</span>
+                Фабрика Творцов
+            </a>
+            <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')"
+                aria-label="Меню">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="module1.html">Модуль 1</a></li>
+                <li><a href="module2.html">Модуль 2</a></li>
+                <li><a href="module3.html">Модуль 3</a></li>
+                <li><a href="module4.html">Модуль 4</a></li>
+                <li><a href="module5.html" class="active">Модуль 5</a></li>
+                <li><a href="module6.html">Модуль 6</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="container">
+
+            <div class="breadcrumb">
+                <a href="index.html">Главная</a>
+                <span class="sep">›</span>
+                <span class="current">Модуль 5</span>
+            </div>
+
+            <section class="module-hero">
+                <div class="module-hero-content">
+                    <div class="module-number" style="background: rgba(253,121,168,0.12); color: var(--module-5);">🎯
+                        Модуль 5</div>
+                    <h1 class="module-hero-title">Визитка творца: авторский ролик о себе в современном формате</h1>
+                    <p class="module-hero-desc"><span class="encrypted-content" data-enc="Vh8uwtB/LdBhXWWFkl/no4KMBtQ/P08dS1KqQQmKcLPcnK+s5l5r4fYgkwAjawlc9scgK7fcouHs+AucjPxIAEYYLY8sexf3l4EWTYRhu4qphryQFI02wm1BpVejrkKp9aExvmsR88tckdQWHp+yh8zP4CYavrSo0B2PX5Uo0t25kmBCPaGSnPqoRKAgjvQTammEgLYXiseUsOY0VmEKSqB2KywtOOJivSAJQHZlcv2iMKXHGCuHSOhJVxWBBbCe">🔒</span></p>
+                </div>
+            </section>
+
+            <div class="lessons-list">
+
+                <!-- 1 -->
+                <div class="lesson-card">
+                    <div class="lesson-header">
+                        <div class="lesson-number" style="background: rgba(253,121,168,0.12); color: var(--module-5);">1
+                        </div>
+                        <h3 class="lesson-title">Общий созвон</h3>
+                    </div>
+                    <div class="lesson-body"><div class="encrypted-content" data-enc="UrKxX3t3cf8O1yiRnBSL5AwNFHGQ11QrkSJCKaIkffOR1ZR6VM4UEr/FwtxyHqMeebE3sqevI65opeqOVSxvUxTVxmUu/EhIZA4UbupMrTFltPi+pVyo7i5JCh0viYD1dynXyaGZ02z6S1ep20Yj4NpYbBXxrREOnwaTkxohCTrntJ8hpJaVIhmqXZ6hYUvihP92VlSKvRVifakS3ALt1UVeT3nPIR6W908dI1VaftG9/trXEcP5K5Y9SePEzDp9CJ9bW5AfI/s1OiWLm9drBQ==">🔒</div></div>
+
+                <!-- 2 -->
+                <div class="lesson-card">
+                    <div class="lesson-header">
+                        <div class="lesson-number" style="background: rgba(253,121,168,0.12); color: var(--module-5);">2
+                        </div>
+                        <h3 class="lesson-title">Почему важно не только выкладывать работы, но и рассказывать о себе
+                        </h3>
+                    </div>
+                    <div class="lesson-body"><div class="encrypted-content" data-enc="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">🔒</div></div>
+                </div>
+
+                <!-- 3 -->
+                <div class="lesson-card">
+                    <div class="lesson-header">
+                        <div class="lesson-number" style="background: rgba(253,121,168,0.12); color: var(--module-5);">3
+                        </div>
+                        <h3 class="lesson-title">Пошаговый план по монтажу ролика о себе</h3>
+                    </div>
+                    <div class="lesson-body"><div class="encrypted-content" data-enc="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">🔒</div></div>
+
+                <!-- 4 -->
+                <div class="lesson-card homework-card">
+                    <div class="lesson-header">
+                        <div class="lesson-number" style="background: rgba(253,121,168,0.12); color: var(--module-5);">
+                            📝</div>
+                        <h3 class="lesson-title">Домашняя работа: собираем третье видео с добавлением креатива</h3>
+                    </div>
+                    <div class="lesson-body"><div class="encrypted-content" data-enc="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">🔒</div></div>
+                </div>
+
+            </div>
+
+            <!-- Page Navigation -->
+            <div class="page-nav">
+                <a href="module4.html" class="page-nav-link prev">
+                    <span class="page-nav-label">← Назад</span>
+                    <span class="page-nav-title">Модуль 4. Создание клипа</span>
+                </a>
+                <a href="module6.html" class="page-nav-link next">
+                    <span class="page-nav-label">Далее →</span>
+                    <span class="page-nav-title">Модуль 6. Дипломная работа</span>
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            Фабрика Творцов | DaVinci Resolve © 2025 — Материалы курса
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Модуль 2. Изучение DaVinci Resolve — Фабрика Творцов</title>
+    <meta name="description"
+        content="Создание первого видео в DaVinci Resolve: все вкладки, монтаж говорящей головы, звук, цвет, экспорт.">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="allowed_users.js"></script>
+    <script src="auth.js" defer></script>
+</head>
+
+<body>
+
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">
+                <span class="nav-logo-icon">🎬</span>
+                Фабрика Творцов
+            </a>
+            <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')"
+                aria-label="Меню">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="module1.html">Модуль 1</a></li>
+                <li><a href="module2.html" class="active">Модуль 2</a></li>
+                <li><a href="module3.html">Модуль 3</a></li>
+                <li><a href="module4.html">Модуль 4</a></li>
+                <li><a href="module5.html">Модуль 5</a></li>
+                <li><a href="module6.html">Модуль 6</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="container">
+
+            <div class="breadcrumb">
+                <a href="index.html">Главная</a>
+                <span class="sep">›</span>
+                <span class="current">Модуль 2</span>
+            </div>
+
+            <section class="module-hero">
+                <div class="module-hero-content">
+                    <div class="module-number" style="background: rgba(9,132,227,0.12); color: var(--module-2);">🎞️
+                        Модуль 2</div>
+                    <h1 class="module-hero-title">Изучение DaVinci Resolve и создание первого видео</h1>
+                    <p class="module-hero-desc"><span class="encrypted-content" data-enc="k3FnpU3cT6/WxlOc3khKMLn3jQAKEWghmDNL5xVchKrmyzS4OANmqAcSmfb78yRdVzj7AsVzhM0woU4N9CXEuV5w0ElOozQCQ5AJvEIlaZ3Bqdr7fEEmzRXTnDZplKzff04s6IQP7FoOtM1FeHhOs4Cn0MNg64WgaUPNn1urPVKEMZM4PaPaL8bOo3GKut2IVm/PNzJTKB8YwEo4lHqqYZ4fnK23u3WGvG82n5/ML0wsu8L13Lj8Kf9aIiPUYfsi3QLIJtNeluZZph6dsACQUip1UxnpuGyKkcbREvRTGpAxxgj4e032JnZK2PdmJn1g">🔒</span></p>
+                </div>
+            </section>
+
+            <!-- Section 2.1 -->
+            <div class="subsection-header">
+                <h2>2.1. Создание первого видео</h2>
+                <div class="subsection-line"></div>
+            </div>
+
+            <div class="lessons-list">
+
+                <div class="lesson-card">
+                    <div class="lesson-header">
+                        <div class="lesson-number" style="background: rgba(9,132,227,0.12); color: var(--module-2);">1
+                        </div>
+                        <h3 class="lesson-title">Введение: Ваша Вселенная для Видео</h3>
+                    </div>
+                    <div class="lesson-body"><div class="encrypted-content" data-enc="Tm8pTDJqmIsxzvoVK6QGOUTkPAZ00rvncEcShe4pOSGNBSu8ZAs5ABgCkn+NdzSBEryY0BIBN8l3T0JDxCc4YTvnsOF0c64wnBjiUn4P9bNqZE4bvEXb6TKS3maHKGl7IaoaLj+hVSS6Yx28K9XffzJxvJydZ080cl3+BYJXOqo9b/r1P2gws9ft/Lpx3qqPTcb6JwAiSG6T39OLxBgBefrxqtHo9NKaBFXvtQad7BemaOPfFsAvTQ0tb3xErZWRLzqeGYw/236S9n/lXB+3Np5OhrrmxRK9RDI3RlXghQAzDmlt+JlaEcy12MMToCqWkFMlotjOyS2oIO2Yi40tH+Zzv2lEXG6pWIa7uUtZLlv8JnjLo0cLaFe7fmzPsquX5jBtJ54FLx8+P3JJFEx0Mg3NOcWpSMdtiVQrEBZyaQ2YzvsYvZWUD4y0ui7bnU+oBA/rVYOktjfG2v4S8t3v2KcSQ5vyUGvSqRILftnlmx4hWiNJc2y+gBIhmXkCSTwl9yqT2xwyMbF2m1QMHIhZay3qRO76vde3HIx3TJR+Q0Hy3pIsrDzvishkdpd6BRC2VQwgE+5N46yrgSX90AjuV7MU+klZWpZ4cj8Ja52yj5Eh4y87DFx1IQChcoInHIEHJEDMGomEYG4NSdXxiFfP2YAHOQ00eH6Uwr63izQ59ZJq3ah0S2D1ZzaJcjz0B16h">🔒</div></div>
+
+                <div class="lesson-card">
+                    <div class="lesson-header">
+                        <div class="lesson-number" style="background: rgba(9,132,227,0.12); color: var(--module-2);">2
+                        </div>
+                        <h3 class="lesson-title">Media (Медиа): Фундамент Проекта</h3>
+                    </div>
+                    <div class="lesson-body"><div class="encrypted-content" data-enc="BxJ6S7xwf76OYMwPn10i7ftFD5XuvFUCfsxZXe2//Lb6skP/zdO1CIA6uNX4rbQzMMk6yKJrdaRipr0gW7AWGs+a6M93nuLrg3866hYNv1Q77Qz++9nB5DPSZOZyPxcDUDuMWs+2YC4rCO5tdFbhMOtQqniHx82DQghbKybSK8I/oNORu6Hz9Cn5/mzLEzHFQurMhG2hFT0Eb/3EfZWRKqtQ0RVlTp7p4/IcSv29dhMasq/p8eohEg2uFdyemYbwh3VeKqfzKDszc7Bb8aCAa7V4+RoTuYMbzJmhPmtzzI2n5anORdrFfWEO4xGhDdphEcIXOyk4bXepSuk+VrOKQUk+UqIYRJRDzhX/cMNzYZbzBBKpQFBsO3RIRWMSQDEfbIyHdHULwAbsplbZwg1bIPbo9fXtaTeAwFnNYHJIUp1Xnam3LnO0BUd3+4epuqrTHOzYUQ6ijomsPTVAT9ma/c69odhh46WLaRKheEZMprxFcxeC3AZq3WQcN1spytETnH4ynD+4zBx/t7kGmvIc2aM+Scj000zSuhPPrdqc7RA=">🔒</div></div>
+
+                <div class="lesson-card">
+                    <div class="lesson-header">
+                        <div class="lesson-number" style="background: rgba(9,132,227,0.12); color: var(--module-2);">3
+                        </div>
+                        <h3 class="lesson-title">Cut (Редакция): Скоростной Черновик</h3>
+                    </div>
+                    <div class="lesson-body"><div class="encrypted-content" data-enc="3nTzN72rvGWX2j//vytenAo5raQLFB6PD4NLbywfrP6mZDp9k8SpKlsQ8hT66hBXNlRNO9kfwmpeBLJ1FwsMydIsvBTgo7Az9225OQqpHQ7TsHLvzVkUenSGLT250TvOA/yYxeFKSZfI7KNOwlrpc19zgB+gGRuQibKESzIfZt8LEanvPfrkx8Ogf7UCOaMFZcZQxGyzzi0ogs+xPPRaCUUuLkcg04I1et5R4LlnirfKWZd1GY8gbLBfWsSdquVTGW0RkDbgdWRxiIY9To2sgWnqfNHa+UOgW03AxVnd+NtK2hD3mcsSF3lAqtsbAnUAf+WYzKyFJ/yHJ6KKbyhuloAsrDoROy37g22k6siSD+yKBhkE/RWPUHkGinp4Ujdi3gVWZ/glWkmmsL8MFSRlCMnbX362AmGin1WQGBq1nU2ezzKhf+SjdlHmEiD+OhOXnQlAF/awFPUx18xlwuyorij1Gn7EeckqYb/gC7GsfuqpROXmW7yKcoyKMHUIUkNZORXLjUNJSgdXeWzYHUYkz8OJsoaBLlxQ3BI5BBAvLN6QHVnxG9ZyOrwnbOiciIDeaHOK51UDM2M3Np2kdwZlRWKGJhq2pYwieDvQkDf4LWBJsfBXjw88OIEn822kqPUxYpWhB5fkfMESknpqKausnNp5SWyWo+CzaI1RuqrAPfc=">🔒</div></div>
+
+                <div class="lesson-card">
+                    <div class="lesson-header">
+                        <div class="lesson-number" style="background: rgba(9,132,227,0.12); color: var(--module-2);">4
+                        </div>
+                        <h3 class="lesson-title">Edit (Монтаж): Точная Сборка</h3>
+                    </div>
+                    <div class="lesson-body"><div class="encrypted-content" data-enc="bYKzw2OyibwNBbz0ZRbXlWgQKW/7k+jn9tgD2P+I4Qz7KCXPDcWGWDAqTfEjnYRSlPdMxQaD8KarzhDdISsKFFB2WFtHOafmITjJiA/5bcqpYk39I9V9PYn4m22N6eRDIpS6Jyo0DFoTVAVRKIT+U1Tuq+UQAWFX2yNG2dnod/hHLuv4UFdO2aV6nw9grEkL7T/MmWuP9lsPVGh4Vof4bOssPYN8ISunv5/xyg0Jr/WxyoOvLQj4NGbKOCxQp19fSSqLbt68uA6rL4Pc3goh14c1yQmGoeDiVmbLfgDMWEyhX8ryFCxot9zahRK5oWi/bJM02U5zgAQEefjipd2O+tEKMZx8Sor/UKq2IhBMVK7lHsri8Ym/y1swoJW6Vgso+oZueFd7GnMa66shPHH+MWVS/fNrRvWetAFFodANkiosAcZRBWdbHOVurY1B2SdFBItf/C0Euf6+oNM+bQ86HxyuD4u2M9lciDjSuzAwynN5FIW6XxqNAIOULm0CxYAxK13qhggAvLNpyOcmDoErKrYxVlyuGHQWJGeY3U5GP1oBcRUwu9QEkbm1x6lZsJSx5DoKow8MkBrX45aZW0H6ZyexFY55ZzCWe8AJ3FK4YunAs0lD6/0KWPvx5QvgzpZyGyiG4BBRh4ptpAI/qGEg2A==">🔒</div></div>
+
+                <div class="lesson-card">
+                    <div class="lesson-header">
+                        <div class="lesson-number" style="background: rgba(9,132,227,0.12); color: var(--module-2);">5
+                        </div>
+                        <h3 class="lesson-title">Fusion (Композитинг): Магия Эффектов</h3>
+                    </div>
+                    <div class="lesson-body"><div class="encrypted-content" data-enc="WCCKaAfvGN73mbzyhJc/RF5qzzugGhO2yJQvrInAkPbflE7Ohzx5zfruHW7M5UWnt6rI1CWva35R2Ob8bd7+3tvaEgihb1Bvm6rTATjclRJGq4qNijRuPNkhEEW4eFK1IAw/zEZwEjtqS9BC8bzDfWARhMGYXEN2Gh5hEc+hx16Y+6Cfd/iRgqGVSSOAVmJhfEB1pLxjLjzSzAmDSyh4dpwIJI55BndPIfqXj7pPzxTg00rB0gt0/W4CCX7xpi7yzb0Ujl+cbjPxqw0SDP+PYoEkzsSHiZDmP+0jCh2DyfY0puEmgfp1MpkNHsEmjMfBTYh4MpSG399oij50QN5h62eFS9TW76FXTcF2hsouaNHKZSVGGADL0BfVBNFvZjhN4MhjfA1Ro/6KJ4ySDkvdsA==">🔒</div></div>
+
+                <div class="lesson-card">
+                    <div class="lesson-header">
+                        <div class="lesson-number" style="background: rgba(9,132,227,0.12); color: var(--module-2);">6
+                        </div>
+                        <h3 class="lesson-title">Color (Цвет): Волшебство Грейдинга</h3>
+                    </div>
+                    <div class="lesson-body"><div class="encrypted-content" data-enc="TdgXJ8B537f9vwZROlgJRgaRZirPhjk/0FK9Q8QiU9RjWCMMWHuvUql3mgmJ84L4spfXO9RH+uMB8RdmdFdtZYU/1A/X8QcK341vulUg3nyILH/Ln0LopPKKFCcJI21wYcFrJ79sk5390IcsXnjWo7xyR+NX/cZ09Y81W3rltQd3aChOiZXB5tTHi7K7zb/WWZFUZJW8/jbVlfsZXqbitf04ZVp2SkemFu126oiX1/ETf67Y4JkewJDekexPX+SSyAqHG4eauPig9sRBxpCKX2GclaU41ORBrgThpyy4Qngv6dsk8YVBEnStIswSHE73zRb7BhVbFR/is/a+FmLVav1ZTUuV8O3xVkg7NFYj7POqJiS/KjZSlrdBy5egrm1A8zv3PWdT6Fs0Zj7GWhsHx8n+qITWNGb87TnXFjAXqPyNtrTbYexf+jG0YnMTTv6EeidQW7/GJXmaJyi98ukxKus7F1OH9O3jo+Ue5AnbMabQ/bbREOeBKKGLU+QjALrz6pPDa074LT52TSGLKL/qbty/aSZ3jEBpHNqrd9jU8M8vrbwJ+wtpMUb4SIlULRmJN7L8eVvc537biUB1t/ie8OiWER/71ikbtnL9yY4mWBew8Stvpe5mDM9+VRKrN0FMRKNbIHbhDfZsYQvygVRTfnAU7YeTm9RG1hZmNfcYuNPTkis9JbVkL4Bpiy+g0/xuHBWcEjQ9KTjJ5YDBKQkZkNquh4bIxnWhoUG53hKmv9zzZwlJJnhsCfLcV/fB+O/4LOO5Ek+h4SJ0M1UhPPLMAIzgWCkF+Vd8xv+1AeSz2c0=">🔒</div></div>
+
+                <div class="lesson-card">
+                    <div class="lesson-header">
+                        <div class="lesson-number" style="background: rgba(9,132,227,0.12); color: var(--module-2);">7
+                        </div>
+                        <h3 class="lesson-title">Fairlight (Звук): Идеальный Саунд</h3>
+                    </div>
+                    <div class="lesson-body"><div class="encrypted-content" data-enc="Nfa6ppE7WjS/DhR9ujx+dS442kL4CORNn0rfOYHVbsr3QLNy0RiAXdkI+sqnH7OqRoWj68iFi1T8RKygfMPjR7FXXByK763sQwI9863Sqjkaf6uXkDhjuVX74QQOLDLvcicY2Dd+DLWqd41j/W/rz58c7qQ9dxaVUWFHdLXf30eW3dMoeliCbf6k2gRcNC0cV6CNkqwMH6VkPKjj9sg6MEsvQWP43aM0E+JmGQMLPL12zKJbMI/IfDH3+cUtisR2Wrc2QI8biByAWG8AWGDKXg/oE3lC7Z1E0OFTAlk7wV4O0oGxcGho70KicKhbvgGutN5KVk877UjI97bqf0G0HvDZxXdm0DcoAbRzsxUPryUHrwXk9p9/6GHLlDDaYv0wz5Bf9HlGVhUiJRMBDM1Tl/clW6iIbhI6BO3wVDL4s+OCQsW3GY2UjeOhLxTlmY6ziAz21HRbKwSEP0LAuaKL8Q3Ritfwy+u0gwPo6RASpbdIcdrEmD3Nd/tJGVvF4o2ZnfYqLO99ZlNyoYr/TGrvDXbZdcMv4IOE4eHhjSS589Z8uiRulc4OuNz08OFG5YmWhPeaX9Las3CVn/e61wvuCMQqzU+18OqycvjfmDu6HuXFt57vL7ipOIPRWCOHrY8o2GrQXQywXVJz8+EGPzWocxGXrI7FTLkF28CxiP0/AnaawixrOEx6DF8s1CrlXJCaTOHRWOrb1oAZYQR1yGvNi4x7WpDR53CbTm+izifcNH8=">🔒</div></div>
+
+                <div class="lesson-card">
+                    <div class="lesson-header">
+                        <div class="lesson-number" style="background: rgba(9,132,227,0.12); color: var(--module-2);">8
+                        </div>
+                        <h3 class="lesson-title">Deliver (Экспорт): Финальный Рендер</h3>
+                    </div>
+                    <div class="lesson-body"><div class="encrypted-content" data-enc="UVQSouONZE1w76Gb9IYKN/14XD2nm1Be4pirPMhdnT5pIU96UArwIH33hhqmmqWKmZT5ADPdIe4zRDM2JdH6krFfw8STXFxWNkvHx6WM4gY9QFjIAboive4mW7XObb1tn1NbVFF9FGcvar3TtCobaCTtOrVDc4PLk0dVnW9xa352QbLvdldUATojUWLiZILrk7EmfEAHfDmgRAFffQO9+eD8s6jmALPkS3c70javWQV6xOTZZ52ZaxID731qq9lY44pVp16gI47nBDyr660dR+qAWSJX1c7lO5tNnk2yqWOX9F2F04CiPBLEuw/LTdC45v8vlyVprHLcqZef4Jsjiugqu1y6PSIZaCUxSs1dbIsd69Niifzy+pTsz5aKA3acDOlqI3KDyiRHi1nmH9uscLWgCo8yR4cyaH0vUkirG7H1yi8JzVXEbIMWQNgai0FJ8DQ/TSGcrbGPa+3TYRfUPA==">🔒</div></div>
+
+                <div class="lesson-card homework-card">
+                    <div class="lesson-header">
+                        <div class="lesson-number" style="background: rgba(9,132,227,0.12); color: var(--module-2);">📝
+                        </div>
+                        <h3 class="lesson-title">Домашняя работа</h3>
+                    </div>
+                    <div class="lesson-body"><div class="encrypted-content" data-enc="SKgSFoK5Xx8N0s10UDtINaho9xmCCxcjm8etkHaGQCVj+6FbLFIEVjOD7mWPi3Unab5OX/H+nehHU8h2ll82tdxSSDgb9Kn0qrBaWKzLPX5cnPGrcgU9OHWV5vNH65oZmGksOLW5ssn3s+fApIlurj8b5EHZSdo8n8fDqg12VJM8LXl/K1NZ6dGtP4zliZq30PmdYZ8Ha0DsR4Uo6etcmBZrVRFLW0WhheCYuFoD7K5S8d+oq/fMumyLdSwWWFE7twvKgPVV5hyydOseKI+lok8dzRoF1Hx9V8c0IFc+MdIywykKwCxbXY/VQEpAatTyde67sdupGKX2lz2N4qAyYv+SDfYt+O/acKAjwNw16LBkAit/svGb81ywSNElptbKEJaAsnMJlMjXnAy06MkcRXI6rjUPJKx4qWzScogmvV4S8iO9Fk6i3gBQ6c4A4C0IxqbBppk+WRTf5WgXfJxAaC5SAo9rqBC9aZwhOIBQIh128ZN+V1Yo+A/U5rsMKb66bxLFpWVvhu4lTxkoDf2Js/nIOlk4sgXs2kBj0b4lx7CAGdGoAQh9HurdwTzkuYA9IKwsuClVGZfFkMiHmPWtWNHGomyvN0AYspaAf8DwjZElHn50U3TSGDtLlTd6usEHPLOykXWsJuu5r80wkx9Bb65YsAFvsq/6YEaH4bh1qkU/LnEwHUSBceu85tkQ1SvRnPa7zGiNw8M/IWRswvN/iprx1uV1xDPvUsS7iysjRCY+5THKkbWU7BhWFR/7rPYrs3fvGZIM8+7eBRxeCrlnpEbdVUIpil5tUnC/Ka0KIg9gtu++RcWOdgkp2iHqAHrBVBqja4qwoHTpLDiwioUSqdkKqc0aHOKvagLsCErtbTnjN5w+U2nsMZoBSDctB5S1vesjy759r35euTERM694m4Xxt+ko5cvaMTaSXZ9rWCWWfuKLIe5GtoGwJAAzJr0q6d0Ce7xB/9dAPgBxh7YKXoFzRO7T53Ij+WafGdiZhivkyF6CQ6y1Vp6bAPcHxIVGNhoK2+Ix0pRUEHoKK8/vxNbcHbMr0ORXz1JhnwCmkmYRlcReu2+4wyqWxdmNtCSXOOBhsC4/DuVgBgj44z2AlHGG30aHthirT2GNmHhwDU9FGOtsq6ij+wwUivWOtKTMjESfINIEm0nswEyzbKUA8zk7H7xhpTr7J+EitL9ILCWscKtGEhc3gFmoHUKutG+QBm/e/jBe02k4oYFqbJhBv2rIXq/G9BIPqBecjlyQXl2IplNXZXkqerucJ4jCLq7ZNzcabklDnIlnF62mcC0gkiEZeCQjQilz+TYSy2c3P8OTRJjhfYvYIBWe52uND11pgPF3stYTS7LjXzdS1vQN29LiNxk+EVuHU+xWf7ki7PG09xYcgAYN/v9L/t1cwA7zl/23GoYVcJs3ocqx9x4tZz9Pm8w28rpdyqWr9+yvBI41SemPVJZrgr5NknHBkSvtDZMmieZbN7USKrRG1QuYRBfDof6WXDmOoErNo3nm1pYLRUqt/LsUS/LETwZuOPvBS4GKZo6fJh0oq8/ld1N+5hyN6JTMd5FPY4fcr5DOkoATAIZYzAkrw/T3YZtQVpGgxdBwpKJoZJS2em6oIjByXsFmyU3rLpmQB4dVPzsMXtHk5/C+bSouAr6GyXUqI/trv4nUoljjniF2DG5Vi0xnfsnmOGOeBFt24JMc61CbgMNSWfiw0Ur2StvNDSJua8PZeoqLuXKU+ndZQ0KWV3gRcz4ehbaahSG3dCE6MdUfwjB8+pANRh0kPLiyEUaNfIOGf1pT6fCs0cSaEKnTpENGhYEOpP45BeRS6o1SKIpSYAb1WfukIcekNc8ut5zchHjIAA+wuCkp5mwazCxOEtZHhGx5k51cA42pwsS9x6ituBI+m75VtkH6xMhWBJVIqhNwbKEaOjOVrBMB5t8UWPR59RRX0TCvFsq/95k15YYpnJRntJyp7L4SNYkqLlOYVTjPCmiCLNYO9hL7Tk/lkYRIUwa50XKHX4LzZR/gJLxGjQQMzkav+4qDZ+n7FZpOB+/r6my9CXwayuarBlEWbRzjnH6Fmeb9Ll1XPfK8027mCCTOLD/Y94A6YvF19atIWIgp+ub3w1g0kL81c1FhiwhjjejO+hPCGvbvVjSy1OtrlxmXr/vW/MedhIaIDJBSj5kCmLdJWUw5NpViaM51PYVAMEHbiulr7mlZP/hWaytkiOhwTPHJvK6kHEATNkmEqSbHnqzooQXwN9YVZ3X683UZlg==">🔒</div></div>
+                </div>
+
+            </div>
+
+            <!-- Section 2.2 -->
+            <div class="subsection-header">
+                <h2>2.2. Монтаж говорящей головы (горизонтальное исполнение)</h2>
+                <div class="subsection-line"></div>
+            </div>
+
+            <div class="lessons-list">
+
+                <div class="lesson-card">
+                    <div class="lesson-header">
+                        <div class="lesson-number" style="background: rgba(9,132,227,0.12); color: var(--module-2);">1
+                        </div>
+                        <h3 class="lesson-title">Вводный этап: Подготовка к работе</h3>
+                    </div>
+                    <div class="lesson-body"><div class="encrypted-content" data-enc="RrU4FgGSEum1GVHuodKfqDiAzgFGg5lVv7EP4YmPQtcHmd6rJfX/7W+L1sakdmIwd67RUw/to3vwvEH2XKn+BzQXOSqdk/K4FsP1ls04Ne/4RutwLZR6uArJ+mBg6OT2eKjUAWHft+oT18/KXgGdbU1DufI9swHrufmLXSwHCFxI6+DTaTe3hW4KTZof87ag7KNKE3aGRJ+nfZypr22tStyydebq7SqWOVIVSyjqC4b3zJf9CfDxW6753+vaK2CPZnSLnYL7i0iMGcnbJG8Hb44Zk8n49nlPyVwF+SfJk0YIAGeIVLaAcOeBuPEIJGPUYxhe+fE4ZL7M+TFhxnlnEDMS4yUGwXTVB7byS8Li6BL15KVu2pIKRM8iO3TlPx+CqFJTgcXoSkyt4EWxDN4X2z+QLvEjqbWv52cqy9r9/iUy2E0kCWsv82+jMyn6OxEem9/8FBDAM0/h7ftfFHRzJgqAeq+IKNinACIrgASAJkA=">🔒</div></div>
+
+                <div class="lesson-card">
+                    <div class="lesson-header">
+                        <div class="lesson-number" style="background: rgba(9,132,227,0.12); color: var(--module-2);">2
+                        </div>
+                        <h3 class="lesson-title">Оптимизация работы: Proxy-файлы и горячие клавиши</h3>
+                    </div>
+                    <div class="lesson-body"><div class="encrypted-content" data-enc="221LWbMWx+MOgPDKkqICBShCiRX5WNq2Wp8L4Yole+70eOEzHLw+xRl+AlTU+MZi1Ke6lC3TNUQQ0QGCixNR2dluCpc2HpCuQPz5srlKO7L2Q/JLidyO6DXdrPQo/2Oob0i2b0Lgs+V1ryUHMLqdzVrsQxKQlcIHKhlpa79KKMCF0XaMFC226IB1fEorY2Ur1gpHilS6I9ZcqSp+WUqr/H0fCzR50czEwSArdHBINQkjIUCpuA25F/GRaz2gZ1RzF9X2jDoL5DDezsqmS/vyIk4wu/ZAoRLsC+O1Ndjdi5GelvtEcewmRnD3WXsW5WB3lUz8kwSomSP0DWZLGEl0z7vldVhCXNVhKzwxiQNoS6/Ru/sOURkAb+iZTRYFg2j+RTAesJpLC1GuS68C6CJJX0WKe6+pU5PpV3aYkSuU3osV6UMr5/elTAuDHX18XpdMfVBey9MGGXXzOtLZUSlqItFAx4ldSFmUPBPPZ8m7UmOo1FfVmT8gA7lYlJSqXPds">🔒</div></div>
+
+                <div class="lesson-card">
+                    <div class="lesson-header">
+                        <div class="lesson-number" style="background: rgba(9,132,227,0.12); color: var(--module-2);">3
+                        </div>
+                        <h3 class="lesson-title">Нарезка материала: как выбрать нужные кадры</h3>
+                    </div>
+                    <div class="lesson-body"><div class="encrypted-content" data-enc="5qCNangWdmjFhOktUvlGF/NSFx1ab664X+dUbCFJasMzCogT9ybvZv8ocznkD4bop49FYhXKCHWYC27AfzREtkwh5RSVMq/ZOki/Na0l6a4v9x1DDooPNfHsQifXLuEVBqvdMEbKYhpIJqtibLlUSIo02FhKbHtpmbj17ec627m9U28T207DnIn1iXgfZIdOR9b2fZY6qgn7V72w4Puh+cC9LzbRtWPks1aHtDNNbmVXfOGWyupLuX4r4HJ7uOYOdGjd5Oy+qD0pUm1rzcl3MjwpzCk7XCJJPytHSu2XP4CzNbu9ovGqgcBy713rowI5lSh33760+6VfIeKObdSGaGoSie2IiTSDi2H04g7S34zMmyGMmEvFDAbvI20xUs8KjfwMEvNPPCq2g6e7xGlmiGlgXfSKBjp53ngIEe+xESZNAH8Vn4L6d6uQHc8QBFaNHA2unncXj8pVqe6lZe/d/A==">🔒</div></div>
+
+                <div class="lesson-card">
+                    <div class="lesson-header">
+                        <div class="lesson-number" style="background: rgba(9,132,227,0.12); color: var(--module-2);">4
+                        </div>
+                        <h3 class="lesson-title">Процесс создания видео: этапы сборки</h3>
+                    </div>
+                    <div class="lesson-body"><div class="encrypted-content" data-enc="ZxW/libpMsTa5y33KTf8vGiCE2X6ISkIa2XlBYSPt5MWnEgLzWBGHiAVDM6qE4XP/q84OCkmkuM3716HZ7IwLGgWXKml0vKFUBIVvlZcBw8YHhLWeeXqlDUCQeBt/2lU9FUnzIgBOMMh9udRSahJPwtdX5KO4nYiM0WE8nL1FIxb9Soercql9jyP0REkN7vwRbug25lGdHIWk/q9jox17RUoBhLueEGo3xQIlkBryYdTUF2gRY3y+c09zCiOFaqHPm3z82/pmSGtQU95TWN3sea0hSgIfGE2qQ1YUDzV0JVqjjaJ3NLqyEtk7pxHkGxdHS5ghp2BhIoTOAgTyCUS37I4zfPIP2yhiuOOV9+njJGb985TI+UaxQ53BJJuNYDyeCZOmn8LTPnIyR7V8mhkHVm8Beow+S8OvPpvzXduTX3MOmD9N85jEmZcuG/YDOVH">🔒</div></div>
+
+                <div class="lesson-card">
+                    <div class="lesson-header">
+                        <div class="lesson-number" style="background: rgba(9,132,227,0.12); color: var(--module-2);">5
+                        </div>
+                        <h3 class="lesson-title">Как работать с голосом: базовая обработка</h3>
+                    </div>
+                    <div class="lesson-body"><div class="encrypted-content" data-enc="gjHIr+E4xwxhh+Txg/5AnaEAuqbGuXGVVGg32C6/Aita7gutfV66CW+kqoZTj9VR4jJ2AqXGg6j8Pzy1rn9rObz+EJld6hdB8Y+dlEExUovHlK131O4YE3EyxIkI38WWvuAIwjkMJiptHaVbjYfo2BFOrFjP7llutdvNuwba0Tmdvd7UK2C63h6uM5wgV47kmMzouacY4cUGDCXTiA/qvJVO8UrdCb8vJeuVnvdIk9k/38MtYYpYuQ8SlnSqlCEnDFyYat8PsOuf2MYhVHvplpm1YJ9pB7ImwtKC0FAZFdUIVITWNNnlYGzN2IDgDBOroG+dv5byn7MO2yG1nvczJg7Zv/NkR1ssJg4CsbMN65EmJnm9hHVzdLyob77tQjDo6Wk4vQq9Xeh3HtYd3xfH8Q==">🔒</div></div>
+
+                <div class="lesson-card">
+                    <div class="lesson-header">
+                        <div class="lesson-number" style="background: rgba(9,132,227,0.12); color: var(--module-2);">6
+                        </div>
+                        <h3 class="lesson-title">Цветокоррекция для начинающих: базовые настройки</h3>
+                    </div>
+                    <div class="lesson-body"><div class="encrypted-content" data-enc="0ZUskZb0yi0O+hL2HOuE+5IKbnHYAV8Et3Kz8yBm+HqTSfTkq17NfjSuHn5vCsrFO5tyam+oZI44fIkdJrodyD9RJqne2dPjOXtkGz5p81UNcJEollI/CNRxdIHQugemEOuz5s3KDen1u39xKVqMXQ2cvv8MZrVZHC1/aTgd6bKFrBIOgDhbsB2uYgRpGAnj3Wgd/LuaA54buihqbgaiJoNPumKHeZrSIt55hVSpqOYw9RPB/E3WtGsLa97K56W6x82A6tbSWrg4/Dm0+xQXs53j15j78P0gBfoxE71w4sVqELmGDEcrVXMaSz4giDBjIsv8+r7V/3FgzjAkL7eI2tgZPTKUmnX8/QfQYj6HJGK4AROIP39b0jH+prHh+d4e">🔒</div></div>
+
+                <div class="lesson-card">
+                    <div class="lesson-header">
+                        <div class="lesson-number" style="background: rgba(9,132,227,0.12); color: var(--module-2);">7
+                        </div>
+                        <h3 class="lesson-title">Завершающие штрихи: саунд-дизайн и экспорт</h3>
+                    </div>
+                    <div class="lesson-body"><div class="encrypted-content" data-enc="oDUVg4YYN9I9808p26Y3B5iLu6mnR6UsXsjFKCGLUinGV+GNXlYllWrNrasCBrtts/2Yghsq+W91iI+M70qNvRJi8Jp9TqYuWd7vd17G3xMPmP/D/1uJ5qI2reOsZoPCuHi0R8ggIj+HzXpiM8hmHBiNk0MQcqDhFMoTN18/klq/bqrClSqD1Ojd6wYS/n3OxRNksiQ9dQ/r9F2mxPYg4ZaK9/iyAhLNNyuYDC/aA9wQs6vxs00BKIC9a8qw7eYcPPIW1XgzSdknH1QqNZL5ySGFZyhWtaCEC1c84gJMHJSVJVIgwVmblVF2P5gBTJ9s1Dslx650ZXb3HPXore2MtCFTM0QS+mbrbYDpTjCv48Oo8j5RughQmWG09ep7npkKZQC3SVbgbMp4n8sTUFrVmqnmYYeglOeYnfG8x6wAXa8=">🔒</div></div>
+
+                <div class="lesson-card homework-card">
+                    <div class="lesson-header">
+                        <div class="lesson-number" style="background: rgba(9,132,227,0.12); color: var(--module-2);">📝
+                        </div>
+                        <h3 class="lesson-title">Задание на практику: закрепляем навыки</h3>
+                    </div>
+                    <div class="lesson-body"><div class="encrypted-content" data-enc="pHsrgzYfdvZgeuFXAUCMiCCo6CWu7b1Rzcc23T+nUzPL1zIokUzF75tqMN2raT1bUOqTUShkbpnZWbjpZtAVMoqSpvyrKyYqOZOKlI9+EfH05tqjzoC1EJK/Ceq+3v+pxQfMk2lYjqLYpfcAPHbt+4Qe6XjZhcMvpqKuMBPoxeMcYWyFSrgPHyiXYmZGoruB/FKpa1Mnzos2ymy6sx33yyndTNZOagk88JtIq9vqxfoBzgZBRZyQ00JJSRKl3WT2CK0WVT1OkvyaSt5JOUoYTxU65atK/X4iiss0aSw5zmXLgud4wnVgRy1IVvgmfSs1wNvTYR1Mo8pNUu73iCvM1EFj48nbkiiH86rWPCkK1RwmrJEtJHSs9SJ1plw0nf8G/vkM+zROCquYv/6Zyejtt6YoBSpqRc06ONJbR14iVxc=">🔒</div></div>
+
+            </div>
+
+            <!-- Page Navigation -->
+            <div class="page-nav">
+                <a href="module1.html" class="page-nav-link prev">
+                    <span class="page-nav-label">← Назад</span>
+                    <span class="page-nav-title">Модуль 1. Подготовка к старту</span>
+                </a>
+                <a href="module3.html" class="page-nav-link next">
+                    <span class="page-nav-label">Далее →</span>
+                    <span class="page-nav-title">Модуль 3. Монтажное мышление</span>
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            Фабрика Творцов | DaVinci Resolve © 2025 — Материалы курса
+        </div>
+    </footer>
+
+</body>
+
+</html>
