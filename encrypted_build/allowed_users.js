@@ -19,4 +19,4 @@ const ALLOWED_USERS = [
  * Ключ шифрования — генерируется скриптом encrypt.py
  * НЕ МЕНЯЙТЕ вручную, если не перешифровали контент!
  */
-const ENCRYPTION_KEY = '59b39e92fa36f9933047681350d9ff250f1ea2e7002f6d736eb4b3df414e6aff';
+const ENCRYPTION_KEY = '75a9ef9be520eaacc1a0823160109521b51dbd0a3d3fff87458fa84e9da7e6c6';
