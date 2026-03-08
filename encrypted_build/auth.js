@@ -47,11 +47,20 @@
         return new TextDecoder().decode(decrypted);
     }
 
+    async function hashId(userId) {
+        // Хешируем ID (превращенный в строку) через SHA-256
+        const msgUint8 = new TextEncoder().encode(String(userId));
+        const hashBuffer = await crypto.subtle.digest('SHA-256', msgUint8);
+        const hashArray = Array.from(new Uint8Array(hashBuffer));
+        const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+        return hashHex;
+    }
+
     // ========================
     // Проверка доступа
     // ========================
 
-    function checkAccess() {
+    async function checkAccessAsync() {
         const tg = window.Telegram && window.Telegram.WebApp;
 
         // Проверяем, открыто ли через Telegram
@@ -60,9 +69,10 @@
         }
 
         const userId = tg.initDataUnsafe.user.id;
+        const hashedUserId = await hashId(userId);
 
         // Проверяем, есть ли пользователь в списке
-        if (typeof ALLOWED_USERS === 'undefined' || !ALLOWED_USERS.includes(userId)) {
+        if (typeof ALLOWED_USERS === 'undefined' || !ALLOWED_USERS.includes(hashedUserId)) {
             return { allowed: false, reason: 'not_allowed', userId: userId };
         }
 
@@ -182,8 +192,8 @@
             });
         }
 
-        // Проверяем доступ
-        const access = checkAccess();
+        // Проверяем доступ (теперь асинхронно)
+        const access = await checkAccessAsync();
 
         if (!access.allowed) {
             showAccessDenied(access.reason, access.userId);
