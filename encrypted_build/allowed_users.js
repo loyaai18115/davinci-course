@@ -12,11 +12,12 @@
  */
 const ALLOWED_USERS = [
     'd45d77656dc2932653ee7858a59e025529527573b16c466222aa2c91f7b61d24', // Alex Khs
-    '199b5cdbca70f17a5f38219ac798294afb2d88d572dd2cb172ba4ff066b360d3'  // Новый ученик
+    '199b5cdbca70f17a5f38219ac798294afb2d88d572dd2cb172ba4ff066b360d3', // Новый ученик
+    '257f79b5c7d2aca58383e7ce3c29352a8ead1db9f867bd43bd1436acf7ccb7eb'  // Новый пользователь
 ];
 
 /**
  * Ключ шифрования — генерируется скриптом encrypt.py
  * НЕ МЕНЯЙТЕ вручную, если не перешифровали контент!
  */
-const ENCRYPTION_KEY = '75a9ef9be520eaacc1a0823160109521b51dbd0a3d3fff87458fa84e9da7e6c6';
+const ENCRYPTION_KEY = '513e9006cb3576606e939d5b614b33e33ff224673513b34168ad43d2afd11d61';
